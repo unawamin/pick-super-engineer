@@ -25,5 +25,4 @@ def pick_fetureC(name)
     end
   end
 end
-
 random_pick()
