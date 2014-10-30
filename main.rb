@@ -11,6 +11,17 @@ def random_pick
   pick_fetureC(eng_list)
 end
 
+
+def pick_featureA(list)
+    engineers_name = list
+    if  engineers_name.include?(' ')
+        engineers_name.gsub!(/ / , '.') 
+
+    end	
+    puts engineers_name
+end
+
+
 def pick_FeatureB(name)
   sp_n = name.split(" ") #split name == " "
   sp_c =  sp_n[1].split("") #split character
