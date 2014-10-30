@@ -13,14 +13,7 @@ end
 def pick_fetureC(list_name)
   search = gets.chomp()
   puts "Search name '#{search}'"
-  #i = 0
-  #while i < list_name.size
-  for i in 0...list_name.size
-    if list_name[i].include? "#{@search}"
-	puts list_name[i]
-    end
-    break
-  end
+  puts list_name[list_name.index{|s| s.include?("#{search}")}]
 end
 
 random_pick()
