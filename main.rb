@@ -10,6 +10,7 @@ def random_pick
   pick_featureA(name)
   pick_FeatureB(name)
   pick_fetureC(ARGV)
+
 end
 
 
@@ -17,7 +18,6 @@ def pick_featureA(list)
     engineers_name = list
     if  engineers_name.include?(' ')
         engineers_name.gsub!(/ / , '.') 
-
     end	
     puts engineers_name
 end
